@@ -23,6 +23,8 @@ I am **NOT** responsible for anything that happens to your or someone else’s c
 
 The [program](https://docs.microsoft.com/en-us/sysinternals/downloads/sdelete) that all of these scripts use for secure deletion is only intended for hard drives and I **CAN NOT** guarantee your data will be permanently erased if you are using them with an SSD. Most SSD manufacturers such as Samsung will have a purpose built tool to securely erase their SSD's without damaging the drive. You can read a little more about the program at [What it isn't](#what-it-isnt).
 
+This program exclusively supports the Windows operating system (Windows Vista and higher)
+
 ### Why?
 ---
 
