@@ -6,7 +6,7 @@ A silent* batch oneliner* to securely erase personal documents
 Contents
 ========
 
- * [Disclaimer](#disclaimer)
+ * [Disclaimers](#disclaimers)
  * [Why?](#why)
  * [Script](#script)
  * [Use](#use)
@@ -16,7 +16,7 @@ Contents
  * [Notes](#notes)
  * [License](#license)
 
-### Disclaimer
+### Disclaimers
 ---
 
 I am **NOT** responsible for anything that happens to your or someone else’s computer as a result of running **ANY** scripts included in this repository and file. Only use the scripts in this repository and file on a computer **YOU OWN** or have permission **FROM THE OWNER** to use it on with their understanding of what it will do **AFTER** reading and understanding **ALL** of the following text. You **WILL NOT** be asked for confirmation after running **ANY** of these scripts. By using this software you accept all risk and accountability.
@@ -82,7 +82,7 @@ Run the [above code](#script) in the command prompt or as a batch file (you will
 ### What it will do
 ---
 
-If you are using the silent version it will begin by hiding its window all actions after this are the same between versions. It then downloads the sdelete(https://docs.microsoft.com/en-us/sysinternals/downloads/sdelete) tool to a temporary directory and uses it to recursively secure deletes all files and folders in the following paths
+If you are using the silent version it will begin by hiding its window all actions after this are the same between versions. It then downloads the [sdelete](https://docs.microsoft.com/en-us/sysinternals/downloads/sdelete) tool to a temporary directory and uses it to recursively secure deletes all files and folders in the following paths
 
 Note: %UserProfile% stands for the current users profile name (it will only securely delete the current users files)
 ```
@@ -108,7 +108,7 @@ This script is **NOT** as good as other software that will securely erase your w
 
 If you wish to use this script often for business or other purposes I recommend you host your own copy of sdelete or download a copy in case anything happens to the download included in this script. I also would not recommend using the silent version for this purpose.
 
-This program automatically agrees to the EULA of [sdelete](https://docs.microsoft.com/en-us/sysinternals/downloads/sdelete) so before using any program in this repository or file download [sdelete](https://docs.microsoft.com/en-us/sysinternals/downloads/sdelete) and check you consent to the EULA. If you use this software without checking the EULA of [sdelete](https://docs.microsoft.com/en-us/sysinternals/downloads/sdelete) or reading this text as you were guided at [the beginning](#disclaimer) **YOU** are responsible for the consequences.
+This program automatically agrees to the EULA of [sdelete](https://docs.microsoft.com/en-us/sysinternals/downloads/sdelete) so before using any program in this repository or file download [sdelete](https://docs.microsoft.com/en-us/sysinternals/downloads/sdelete) and check you consent to the EULA. If you use this software without checking the EULA of [sdelete](https://docs.microsoft.com/en-us/sysinternals/downloads/sdelete) or reading this text as you were guided at [the beginning](#disclaimers) **YOU** are responsible for the consequences.
 
 **Usually** just resetting your computer with the option Microsoft gives you for selling/throwing away your system (although it will take longer) will overwrite your data well enough to make it irrecoverable (not a guarantee and subject to change as I do not have control over their software). I recommend doing that after running this script if you are using this for selling/throwing your system away.
 
