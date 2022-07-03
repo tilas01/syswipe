@@ -19,7 +19,7 @@ Contents
 ### Disclaimer
 ---
 
-I am **NOT** responsible for anything that happens to your or someone else’s computer as a result of running **ANY** scripts included in this repository and file. Only use the scripts in this repository and file on a computer **YOU OWN** or have permission **FROM THE OWNER** to use it on with their understanding of what it will do **AFTER** reading and understanding **ALL** of the following text. You **WILL NOT** be asked for confirmation after running **ANY** of these scripts.
+I am **NOT** responsible for anything that happens to your or someone else’s computer as a result of running **ANY** scripts included in this repository and file. Only use the scripts in this repository and file on a computer **YOU OWN** or have permission **FROM THE OWNER** to use it on with their understanding of what it will do **AFTER** reading and understanding **ALL** of the following text. You **WILL NOT** be asked for confirmation after running **ANY** of these scripts. By using this software you accept all risk and accountability.
 
 The [program](https://docs.microsoft.com/en-us/sysinternals/downloads/sdelete) that all of these scripts use for secure deletion is only intended for hard drives and I **CAN NOT** guarantee your data will be permanently erased if you are using them with an SSD. Most SSD manufacturers such as Samsung will have a purpose built tool to securely erase their SSD's without damaging the drive. You can read a little more about the program at [What it isn't](#what-it-isnt).
 
@@ -36,7 +36,7 @@ To give people a convenient way to securely erase their data without having any 
 #### Oneliner:
 
 ```
-powershell -command "Invoke-WebRequest "https://download.sysinternals.com/files/SDelete.zip" -OutFile %temp%\a.zip" & cd %temp% & powershell -command "Expand-Archive .\a.zip -Force" & powershell -command "rm "a.zip" -Force" & a\sdelete.exe /accepteula -nobanner >nul & a\sdelete.exe -r -s -f -nobanner -p 1 "%UserProfile%\Documents" "%UserProfile%\Pictures" "%UserProfile%\Videos" "%UserProfile%\Music" "%UserProfile%\OneDrive" "%UserProfile%\Downloads" "%UserProfile%\Desktop" & rmdir /S /Q "a" & exit
+powershell -command "Invoke-WebRequest "https://download.sysinternals.com/files/SDelete.zip" -OutFile %temp%\a.zip" & cd %temp% & powershell -command "Expand-Archive .\a.zip -Force" & powershell -command "rm "a.zip" -Force" & a\sdelete.exe /accepteula -nobanner >nul & a\sdelete.exe -r -s -f -nobanner -p 3 "%UserProfile%\Documents" "%UserProfile%\Pictures" "%UserProfile%\Videos" "%UserProfile%\Music" "%UserProfile%\OneDrive" "%UserProfile%\Downloads" "%UserProfile%\Desktop" & rmdir /S /Q "a" & exit
 ```
 
 [syswipe_oneliner](syswipe_oneliner)
@@ -48,7 +48,7 @@ powershell -command "Invoke-WebRequest "https://download.sysinternals.com/files/
 #### Oneliner (Silent):
 
 ```
-powershell -WindowStyle Hidden -command "Invoke-WebRequest "https://download.sysinternals.com/files/SDelete.zip" -OutFile %temp%\a.zip" >nul & cd %temp% >nul & powershell -command "Expand-Archive .\a.zip -Force" >nul & powershell -command "rm "a.zip" -Force" >nul & a\sdelete.exe /accepteula -nobanner >nul & a\sdelete.exe -r -s -f -nobanner -p 1 "%UserProfile%\Documents" "%UserProfile%\Pictures" "%UserProfile%\Videos" "%UserProfile%\Music" "%UserProfile%\Downloads" "%UserProfile%\Desktop" >nul & rmdir /S /Q "a" >nul & exit
+powershell -WindowStyle Hidden -command "Invoke-WebRequest "https://download.sysinternals.com/files/SDelete.zip" -OutFile %temp%\a.zip" >nul & cd %temp% >nul & powershell -command "Expand-Archive .\a.zip -Force" >nul & powershell -command "rm "a.zip" -Force" >nul & a\sdelete.exe /accepteula -nobanner >nul & a\sdelete.exe -r -s -f -nobanner -p 3 "%UserProfile%\Documents" "%UserProfile%\Pictures" "%UserProfile%\Videos" "%UserProfile%\Music" "%UserProfile%\Downloads" "%UserProfile%\Desktop" >nul & rmdir /S /Q "a" >nul & exit
 ```
 
 [syswipe_oneliner_silent](syswipe_oneliner_silent)
@@ -82,7 +82,7 @@ Run the [above code](#script) in the command prompt or as a batch file (you will
 ### What it will do
 ---
 
-If you are using the silent version it will begin by hiding its window all actions after this are the same between versions. It then downloads the sdelete(link) tool created by Microsoft for their sysinternals suite to a temporary directory and uses it to recursively secure deletes all files and folders in the following paths
+If you are using the silent version it will begin by hiding its window all actions after this are the same between versions. It then downloads the sdelete(https://docs.microsoft.com/en-us/sysinternals/downloads/sdelete) tool to a temporary directory and uses it to recursively secure deletes all files and folders in the following paths
 
 Note: %UserProfile% stands for the current users profile name (it will only securely delete the current users files)
 ```
@@ -114,7 +114,7 @@ This program automatically agrees to the EULA of [sdelete](https://docs.microsof
 
 Antivirus’s currently do not recognise this code as malicious. Please do not misuse this code to ensure it is always usable for everyone.
 
-Please ensure that anywhere else you distribute this code or a modified version of it a summary of what the program will do as well as the [What it will do](#what-it-wil-ldo) and [What it isn’t](#what-it-isnt) sections are made available to the user.
+Please ensure that anywhere else you distribute this code or a modified version of it a summary of what the program will do as well as the [What it will do](#what-it-will-do) and [What it isn’t](#what-it-isnt) sections are made available to the user.
 
 ### License
 ---
