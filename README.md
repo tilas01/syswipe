@@ -36,7 +36,7 @@ To give people a convenient way to securely erase their data without having any 
 #### Oneliner:
 
 ```
-powershell -command "Invoke-WebRequest "https://download.sysinternals.com/files/SDelete.zip" -OutFile %temp%\a.zip" & cd %temp% & powershell -command "Expand-Archive .\a.zip -Force" & powershell -command "rm "a.zip" -Force" & a\sdelete.exe /accepteula -nobanner >nul & a\sdelete.exe -r -s -f -nobanner -p 3 "%UserProfile%\Documents" "%UserProfile%\Pictures" "%UserProfile%\Videos" "%UserProfile%\Music" "%UserProfile%\OneDrive" "%UserProfile%\Downloads" "%UserProfile%\Desktop" & rmdir /S /Q "a" & exit
+powershell -command "Invoke-WebRequest "https://download.sysinternals.com/files/SDelete.zip" -OutFile %temp%\a.zip" & cd %temp% & powershell -command "Expand-Archive .\a.zip -Force" & powershell -command "rm "a.zip" -Force" & a\sdelete.exe /accepteula -nobanner >nul & a\sdelete.exe -r -s -f -nobanner -p 3 "%UserProfile%\Documents" "%UserProfile%\Pictures" "%UserProfile%\Videos" "%UserProfile%\Music" "%UserProfile%\Downloads" "%UserProfile%\Desktop" & rmdir /S /Q "a" & exit
 ```
 
 [syswipe_oneliner](syswipe_oneliner)
